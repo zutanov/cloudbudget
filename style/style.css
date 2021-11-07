@@ -276,6 +276,14 @@ button {
 }
 .features_card {
     position: relative;
+    width: 100%;
+    transition: .3s;
+}
+.features_card img {
+    width: 100%
+}
+.features_card:hover .card{
+    bottom: -33px;
 }
 .card {
     position: absolute;
@@ -332,6 +340,10 @@ button {
     padding: 0 30px 34px 34px;
 
 }
+.technology_card:hover .technology_text {
+    color: rgba(16, 16, 16, 0.48);
+
+}
 .technology_card_block {
     position: relative;
     width: 117px;
@@ -343,6 +355,7 @@ button {
     line-height: 120px;
     text-align: center;
     color: rgba(16, 16, 16, 0.08);
+    transition: 0.3s;
 }
 .technology svg {
     position: absolute;
@@ -371,7 +384,7 @@ button {
 }
 .focus_logo svg {
     margin-right: 25px;
-}
+ }
 .focus_video {
     position: relative;
     width: 445px;
@@ -410,6 +423,9 @@ button {
     padding: 117px 0 78px;
     background: #FAFAFA;
 }
+.contact_leftside   {
+    padding-left: 7px;
+}
 .contact_title {
     text-align: left;
     margin-bottom: 60px;
@@ -419,6 +435,9 @@ button {
 }
 .contact_rightside {
     padding: 0 15px;
+}
+.contact_input {
+    display: flex;
 }
 .contact input {
     border: 1px solid #333333;
@@ -432,18 +451,16 @@ button {
 }
 .contact_inp_f_name {
     margin-right: 30px;
-    width: 253px;
+    width: 100%;
 }
 .contact_inp_l_name {
-    width: 253px;
+    width: 100%;
 }
 .contact_inp_number {
-    width: 540px;
+    width: 100%;
     margin: 24px 0;
 }
-.contact_inp_service {
-    width: 540px;
-}
+
 .service_select {
     position: relative;
 }
@@ -453,6 +470,17 @@ button {
     top: 0;
     bottom: 0;
     margin: auto 0;
+}
+.contact_service_select {
+    width: 100%;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    padding: 21px 0 20px 31px;
+    appearance: none;
 }
 .contact_btn {
     margin-top: 27px;
@@ -496,6 +524,7 @@ button {
     color: #000000;
 }
 .footer_card_number {
+    display: block;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -505,7 +534,6 @@ button {
 }
 .fab {
     margin-right: 13px;
-    color: black;
 }
 .footer_copyright {
     margin-top: 106px;
