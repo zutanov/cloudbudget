@@ -5,6 +5,7 @@
     <title>Lesson18</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
 <header class="header">
@@ -220,20 +221,24 @@
                 <p class="section_desc contact_desc">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
             </div>
             <div class="col-6 contact_rightside">
-
+                <div class="contact_input">
                     <label for="f_name"></label>
                     <input type="text" id="f_name" placeholder="First Name" class="contact_inp_f_name">
                     <label for="l_name"></label>
                     <input type="text" id="l_name" placeholder="Last Name" class="contact_inp_l_name">
-
+                </div>
                 <label for="number"></label>
                 <input type="number" id="number" placeholder="Phone Number" class="contact_inp_number">
                     <div class="service_select">
                     <label for="service"></label>
-                    <input type="text" id="service" placeholder="Select Service" class="contact_inp_service">
-                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.2549 0.192383L13.8701 0.807617L7 7.67773L0.129883 0.807617L0.745117 0.192383L7 6.44727L13.2549 0.192383Z" fill="#132743" fill-opacity="0.5"/>
-                </svg>
+                        <select id="service" class="contact_service_select">
+                            <option value="0">Select Service</option>
+                            <option value="1">Select Number</option>
+                        </select>
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2549 0.192383L13.8701 0.807617L7 7.67773L0.129883 0.807617L0.745117 0.192383L7 6.44727L13.2549 0.192383Z" fill="#132743" fill-opacity="0.5"/>
+                        </svg>
+
                     </div>
                 <button class="filled_btn contact_btn">Submit Now</button>
             </div>
@@ -261,8 +266,8 @@
             </div>
             <div class="footer_grid_card">
                 <h4 class="footer_card_title">Get in Touch</h4>
-                <p class="footer_card_desc">info@cloudbudget.com</p>
-                <p class="footer_card_number">+1 844-721-7120</p>
+                <a href="mailto:info@cloudbudget.com" class="footer_card_desc">info@cloudbudget.com</a>
+                <a href="tel:+1 844-721-7120" class="footer_card_number">+1 844-721-7120</a>
                 <div class="footer_icons">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-linkedin-in"></i>
